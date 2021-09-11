@@ -1,18 +1,31 @@
-h1 { 
-  font-size:72px;
-  line-height:90px;
-  font-family: 'Times New Roman', "Noto Serif", SimSun, serif;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
+@media screen and (max-device-width:960px){
+  h1 { 
+    font-size:36px;
+    line-height:42px;
+    font-family: 'Times New Roman', "Noto Serif", SimSun, serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:960px){
+  h1 { 
+    font-size:72px;
+    line-height:90px;
+    font-family: 'Times New Roman', "Noto Serif", SimSun, serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 rt {
-  letter-spacing: 2rem;  
-  margin-bottom: .5rem;
+  letter-spacing: 2vw;  
+  margin-bottom: .5vw;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 a {
@@ -32,8 +45,8 @@ a:hover {
 }
 
 #mv-img {
-  width: 480px;
-  height: 480px;
+  width: 50vw;
+  height: 50vw;
   background-image:url("img.png");
   background-size:120%;
   background-repeat: no-repeat;
@@ -43,7 +56,7 @@ a:hover {
 }
 
 #bookmark {
-  width: 480px;
+  width: 50vw;
   line-height: 1.3rem;
   padding-top: 10px;
   margin-left: auto;
@@ -53,7 +66,7 @@ a:hover {
 
 #msg {
   height: 40px;
-  letter-spacing: .1rem;
+  letter-spacing: .1rvw;
   padding-top: 9px;
   text-align: center;
   font-size: 22px;
