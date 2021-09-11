@@ -1,31 +1,19 @@
-@media screen and (max-device-width:960px){
-  h1 { 
-    font-size:36px;
-    line-height:42px;
-    font-family: 'Times New Roman', "Noto Serif", SimSun, serif;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width:960px){
-  h1 { 
-    font-size:72px;
-    line-height:90px;
-    font-family: 'Times New Roman', "Noto Serif", SimSun, serif;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
+h1 { 
+  font-size:clamp(36px, 5vw, 72px);
+  line-height:90px;
+  font-family: 'Times New Roman', "Noto Serif", SimSun, serif;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 rt {
-  letter-spacing: 2vw;  
+  letter-spacing:clamp(0px, 2vw, 2rem);  
   margin-bottom: .5vw;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: clamp(0.5rem, 1vw, 1rem);
 }
 
 a {
@@ -46,9 +34,12 @@ a:hover {
 
 #mv-img {
   width: 50vw;
+  max-width: 480px;
   height: 50vw;
+  max-height: 480px;
+  background-position:center;
   background-image:url("img.png");
-  background-size:120%;
+  background-size:130%;
   background-repeat: no-repeat;
   background-color: #000;
   margin-left: auto;
@@ -57,6 +48,7 @@ a:hover {
 
 #bookmark {
   width: 50vw;
+  max-width: 480px;
   line-height: 1.3rem;
   padding-top: 10px;
   margin-left: auto;
